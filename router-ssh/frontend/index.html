@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Cisco Router SSH</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+    <div class="container">
+
+        <div class="header">
+
+            <h1>Cisco Router SSH</h1>
+
+            <p>
+                Execute Cisco IOS commands using SSH
+            </p>
+
+        </div>
+
+
+        <div class="form-card">
+
+            <!-- Router IP -->
+
+            <label for="routerIp">
+                Router IP Address
+            </label>
+
+            <input
+                type="text"
+                id="routerIp"
+                placeholder="192.168.172.129"
+                value="192.168.172.129"
+            >
+
+
+            <!-- Router Command -->
+
+            <label for="command">
+                Router Command
+            </label>
+
+            <input
+                type="text"
+                id="command"
+                placeholder="show ip interface brief"
+                value="show ip interface brief"
+            >
+
+
+            <!-- Execute Button -->
+
+            <button id="executeButton">
+
+                Execute Command
+
+            </button>
+
+        </div>
+
+
+        <!-- Output -->
+
+        <div class="output-card">
+
+            <div class="output-header">
+
+                <h2>Router Output</h2>
+
+                <span id="status">
+                    Ready
+                </span>
+
+            </div>
+
+            <pre id="output">Waiting for command...</pre>
+
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

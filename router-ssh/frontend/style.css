@@ -1,0 +1,216 @@
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+
+    margin: 0;
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    background: #f3f4f6;
+
+    color: #111827;
+}
+
+
+.container {
+
+    width: 850px;
+
+    max-width: 90%;
+
+    margin: 60px auto;
+}
+
+
+/* ==========================
+   Header
+========================== */
+
+.header {
+
+    margin-bottom: 25px;
+}
+
+
+.header h1 {
+
+    margin: 0;
+
+    font-size: 32px;
+}
+
+
+.header p {
+
+    color: #6b7280;
+
+    margin-top: 8px;
+}
+
+
+/* ==========================
+   Form Card
+========================== */
+
+.form-card {
+
+    background: white;
+
+    padding: 30px;
+
+    border-radius: 12px;
+
+    box-shadow:
+        0 4px 15px
+        rgba(0, 0, 0, 0.08);
+}
+
+
+label {
+
+    display: block;
+
+    margin-top: 15px;
+
+    margin-bottom: 8px;
+
+    font-weight: bold;
+}
+
+
+input {
+
+    width: 100%;
+
+    padding: 13px;
+
+    font-size: 16px;
+
+    border: 1px solid #d1d5db;
+
+    border-radius: 7px;
+
+    outline: none;
+}
+
+
+input:focus {
+
+    border-color: #2563eb;
+}
+
+
+/* ==========================
+   Button
+========================== */
+
+button {
+
+    width: 100%;
+
+    margin-top: 25px;
+
+    padding: 14px;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    color: white;
+
+    background: #2563eb;
+
+    border: none;
+
+    border-radius: 7px;
+
+    cursor: pointer;
+}
+
+
+button:hover {
+
+    background: #1d4ed8;
+}
+
+
+button:disabled {
+
+    background: #9ca3af;
+
+    cursor: not-allowed;
+}
+
+
+/* ==========================
+   Output
+========================== */
+
+.output-card {
+
+    background: white;
+
+    margin-top: 25px;
+
+    padding: 25px;
+
+    border-radius: 12px;
+
+    box-shadow:
+        0 4px 15px
+        rgba(0, 0, 0, 0.08);
+}
+
+
+.output-header {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+}
+
+
+.output-header h2 {
+
+    margin: 0 0 15px 0;
+}
+
+
+#status {
+
+    font-size: 14px;
+
+    color: #6b7280;
+}
+
+
+pre {
+
+    background: #111827;
+
+    color: #e5e7eb;
+
+    padding: 20px;
+
+    border-radius: 8px;
+
+    min-height: 250px;
+
+    overflow-x: auto;
+
+    white-space: pre-wrap;
+
+    font-family:
+        "Courier New",
+        monospace;
+
+    line-height: 1.5;
+}

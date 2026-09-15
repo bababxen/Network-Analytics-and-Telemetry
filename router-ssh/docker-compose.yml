@@ -1,0 +1,29 @@
+services:
+
+  backend:
+
+    build:
+      context: ./backend
+
+    container_name: router_backend
+
+    restart: unless-stopped
+
+    ports:
+      - "5001:5000"
+
+
+  frontend:
+
+    build:
+      context: ./frontend
+
+    container_name: router_frontend
+
+    restart: unless-stopped
+
+    ports:
+      - "8081:80"
+
+    depends_on:
+      - backend
